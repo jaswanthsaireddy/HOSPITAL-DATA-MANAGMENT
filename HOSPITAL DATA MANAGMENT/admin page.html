@@ -1,0 +1,155 @@
+<html>
+<style>
+
+*{  margin: 0;
+padding: 0;
+font-family: Century Gothic;}
+
+body{ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(H1.jpg);
+            height:100vh;
+             background-size: cover;
+             background-position: center;}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+ul{ float:right;
+     list-style-type:none;
+      margin-top: 25px;
+       margin-right: 20px;}
+
+ul li{ display: inline-block;}
+
+ul li a{ text-decoration: none;
+          color: white;
+          padding: 5px 20px;
+           border: 1px solid transparent;
+          transition: 0.6s ease;}
+
+ul li a:hover{
+      background-color: #fff;
+        color: #000;}
+
+.main{ 
+     max-width: 1200px;
+     margin: auto;}
+
+.title{ 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);}
+
+h1{ color: #fff;
+          font-size: 70px;}
+
+.button{ position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%,-50%);}
+
+.btn{ border: 1px solid #fff;
+          padding: 10px 30px;
+          color: #fff;
+         text-decoration: none;
+         transition: 0.6s ease;}
+
+.btn:hover{ background-color: #fff;
+        color: #000;}
+
+.van{
+  padding-left: 50px;
+  padding-bottom:100px;
+  color : white;
+}
+.h2{text-decoration: none;
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+
+<head>
+<title>hospital</title>
+</head> 
+
+<body>
+<header>
+           <div class="main">
+                                                  <ul> 
+                                                             <li><a href="admin page.html">Home</a></li>
+                                                             
+                                                             <li><a href="about.html">About</a></li>
+                                                             <li><a href="contact.html">Contact Us</a></li>
+                                                             
+                                                             <li><a href="home.html">Sign Out</a></li>
+                                                          <div class="dropdown">
+  <button class="main">query</button>
+  <div class="dropdown-content">
+  <a href="q1.php">order by pat_id</a>
+  <a href="q2.php">display inv_no</a>
+  <a href="q3.php">inner join doc_id</a>
+    <a href="q5.php">group by bill_amount</a>
+  <a href="q6.php">display address</a>
+  <a href="q7.php">display patient bills with inv_no</a>
+  <a href="q8.php">asc doc_id,des gen</a>
+  <a href="q9.php">greater than 15k</a></div>
+  
+    </div>
+</div> 
+                                                 </ul>
+         </div>
+
+   <body>
+
+    <br><br><br>
+    <h2  class="van"><a href="ddata.html" style="color: white">doctor</a></h2>
+    <h2 class="van"><a href="sdata.html" style="color: white">staff</a></h2>
+    <h2 class="van"><a href="ptable.php"style="color: white">Display patient details</a></h2>
+     <h2 class="van"><a href="htable.php"style="color: white">Display billing details</a></h2>
+     <h2 class="van"><a href="itable.php"style="color: white">Display in_patient details</a></h2>
+   
+  </span>
+
+
+  </body>
+  
+
+
+</header>
+</body>
+</html>

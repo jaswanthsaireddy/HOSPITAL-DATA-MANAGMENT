@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+ function matchpass(){
+	var firstpassword=document.f1.password.value;
+	var secondpassword=document.f1.password2.value;
+if (firstpassword.length<8){
+	alert("Password must be at least 8 characters long.");  
+  return false; 
+}
+else if (firstpassword==secondpassword){
+ return true;
+}
+else if (firstpassword!=secondpassword) {
+	alert("password must be same");
+ return false;
+}
+}
+</script>
+<script>  
+function validateemail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}                                   
+</script>  
+<style>
+
+body{
+	background-image:url(3.jpg);
+	background-size: cover;
+	font-family:Arial;
+
+}
+.wrap{
+	max-width:350px;
+	border-radius:20px;
+	margin:auto;
+	background:rgba(0,0,0,0.8);
+	box-sizing:border-box;
+	padding:40px;
+	color:#fff;
+	margin-top:100px;       
+}
+h2{
+	text-align: center;
+}
+input[type=text],input[type=password],input[type=email],input[type=date]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px 5px;
+	background: rgba(0,0,0,0.10);
+	outline: none;
+	border: none;
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+	border-radius: 5px;
+	margin:5px;
+	font-weight: bold;
+}
+input[type=submit]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin-top: 30px;
+	outline: none;
+	border-bottom: none;
+	background: #60adde;
+	opacity: 0.7;
+	border-radius: 20px;
+	font-size: 20px;
+	color:#fff;
+}
+input[type=submit]:hover{
+	background: #003366;
+	opacity:0.7;
+}
+</style>
+
+<head>
+<title> Signup form</title>
+</head>
+<body>
+<div class ="wrap">
+    <h2> Display Table </h2>
+    <form  action="display.php"method="post" onsubmit="return matchpass()">
+    	
+     <input type="text" name="table"placeholder="Table name" required>
+     <input type="submit" value="submit" >
+     
+
+</form>
+</div>
+</body>
+</html>

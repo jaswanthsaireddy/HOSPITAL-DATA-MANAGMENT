@@ -1,0 +1,116 @@
+<style> 
+
+body{
+	background-image: url(H3.jpg);
+             background-size: cover;
+             font-family:Arial;
+
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+}
+ul{ float:right;
+     list-style-type:none;
+      margin-top: 25px;
+       margin-right: 20px;}
+
+ul li{ display: inline-block;}
+
+ul li a{ text-decoration: none;
+          color: #fff;
+          padding: 5px 20px;
+           border: 1px solid transparent;
+          transition: 0.6s ease;}
+
+ul li a:hover{
+      background-color: #fff;
+        color: #000;}
+
+.main{ 
+     max-width: 1200px;
+     margin: auto;}
+h1{ color: #fff;
+          font-size: 70px;
+          text-align: center;
+          padding-top: 70px;
+        }
+.wrap{
+	max-width:350px;
+	border-radius:20px;
+	margin:auto;
+	background:rgba(0,0,0,0.8);
+	box-sizing:border-box;
+	padding:40px;
+	color:#fff;
+	margin-top:100px;       
+}
+h2{
+	text-align: center;
+}
+
+input[type=text],input[type=password]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px 5px;
+	background: rgba(0,0,0,0.10);
+	outline: none;
+	border: none;
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+	border-radius: 5px;
+	margin:5px;
+	font-weight: bold;
+}
+input[type=submit]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin-top: 30px;
+	outline: none;
+	border-bottom: none;
+	background: #60adde;
+	opacity: 0.7;
+	border-radius: 20px;
+	font-size: 20px;
+	color:#fff;
+}
+input[type=submit]:hover{
+	background: #003366;
+	opacity:0.7;
+}
+</style>
+
+<head>
+<title>Admin Login form</title>
+</head>
+<body>
+	 <div class="main">
+                                                  <ul> 
+                                                             <li><a href="admin page.html">Home</a></li>
+                                                             <li><a href="about.html">About</a></li>
+                                                             
+                                                             <li><a href="home.html">sign out</a></li>
+
+                                                           
+                                                 </ul>
+         </div>
+  <div class="title">
+        <h1>SARDS HOSPITALS</h1>
+</div>
+
+<div class ="wrap">
+    <h2> Delete data </h2>
+    <form action="sdelete.php" method="get" name="myform" onsubmit="return validateform()">
+     <input type="text" placeholder="staff_id" name="staff_id"required>
+     <input type="submit" value="Delete" ;>
+ </form>
+</div>
+
+</body>
+</html>

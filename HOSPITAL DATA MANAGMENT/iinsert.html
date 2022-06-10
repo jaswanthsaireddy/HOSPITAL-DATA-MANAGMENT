@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body{
+	background-image:url(H7.jpg);
+	background-size: cover;
+	font-family:Arial;
+
+}
+.wrap{
+	max-width:350px;
+	border-radius:20px;
+	margin:auto;
+	background:rgba(0,0,0,0.8);
+	box-sizing:border-box;
+	padding:40px;
+	color:#fff;
+	margin-top:100px;       
+}
+h2{
+	text-align: center;
+}
+input[type=text],input[type=date]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px 5px;
+	background: rgba(0,0,0,0.10);
+	outline: none;
+	border: none;
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+	border-radius: 5px;
+	margin:5px;
+	font-weight: bold;
+}
+input[type=submit]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin-top: 30px;
+	outline: none;
+	border-bottom: none;
+	background: #60adde;
+	opacity: 0.7;
+	border-radius: 20px;
+	font-size: 20px;
+	color:#fff;
+}
+input[type=submit]:hover{
+	background: #003366;
+	opacity:0.7;
+}
+</style>
+
+<head>
+<title> hospital</title>
+</head>
+<body>
+<div class ="wrap">
+    <h2> INSERT INPATIENT DATA </h2>
+    <form name="f1" action="iinsert.php"method="post" onsubmit="return matchpass()">
+     <input type="text" name="id" placeholder="patient_id" required>
+     <input type="date" name="date"placeholder="date_of_admission" required>
+     <input type="text" name="fn"placeholder="floor_no" required>
+     <input type="text"  name="rn" placeholder="room_no" required>
+     <input type="text" name="bn"placeholder="bed_no" required>
+     <input type="submit" name="submit"value="INSERT" >
+
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body{
+	background-image:url(H3.jpg);
+	background-size: cover;
+	font-family:Arial;
+
+}
+.wrap{
+	max-width:350px;
+	border-radius:20px;
+	margin:auto;
+	background:rgba(0,0,0,0.8);
+	box-sizing:border-box;
+	padding:40px;
+	color:#fff;
+	margin-top:100px;       
+}
+h2{
+	text-align: center;
+}
+input[type=text],input[type=password],input[type=email],input[type=date]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 12px 5px;
+	background: rgba(0,0,0,0.10);
+	outline: none;
+	border: none;
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+	border-radius: 5px;
+	margin:5px;
+	font-weight: bold;
+}
+input[type=submit]{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin-top: 30px;
+	outline: none;
+	border-bottom: none;
+	background: #60adde;
+	opacity: 0.7;
+	border-radius: 20px;
+	font-size: 20px;
+	color:#fff;
+}
+input[type=submit]:hover{
+	background: #003366;
+	opacity:0.7;
+}
+</style>
+
+<head>
+<title> hospital</title>
+</head>
+<body>
+<div class ="wrap">
+    <h2> INSERT DOCTOR DATA </h2>
+    <form name="f1" action="dinsert.php"method="post" onsubmit="return matchpass()">
+     <input type="text" name="id" placeholder="doc_id" required>
+     <input type="text" name="fn"placeholder="doc_first_Name" required>
+     <input type="text" name="ln"placeholder="doc_last_name" required>
+     <input type="text"  name="gender" placeholder="gender" required>
+     
+     <input type="date" name="dob" placeholder="dob" required>
+     <input type="text"  name="spe"placeholder="specialist" required>
+    	<input type="text" name="phno" placeholder="phone_no"pattern="[0-9]{10}" required>
+     <input type="email" name="em"placeholder="email_id" required>
+     <input type="text" name="add"placeholder="address" required>
+
+     <input type="submit" name="submit"value="INSERT" >
+
+</form>
+</div>
+</body>
+</html>
